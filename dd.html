@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        .review .box {
+            border-radius: 5px;
+            background: #373535;
+            padding: 20px;
+            position: relative;
+            margin: 3px;
+        }
+
+        .review .box .fa-quote-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: blue;
+            font-size: 60px;
+        }
+
+        .review .box .user {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-bottom: 1rem;
+        }
+
+        .review .box .user img {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .review .box .user h3 {
+            font-size: 20px;
+            color: #fff
+        }
+
+        .review .box .user span {
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .review .box p {
+            line-height: 2;
+            color: white;
+            padding: 5px 0;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".review-slider", {
+            slidesPerView: 1,
+            grabCursor: true,
+            loop: true,
+            spaceBetween: 10,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                700: {
+                    slidesPerView: 2,
+                },
+                1050: {
+                    slidesPerView: 3,
+                },
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
+</body>
+
+</html>
